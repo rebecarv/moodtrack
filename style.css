@@ -110,3 +110,42 @@ a:hover {
 }
 
 
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .app {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  select, button {
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  button {
+    margin-left: 0;
+  }
+
+  .playlist {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .track {
+    padding: 0.8rem;
+  }
+}
