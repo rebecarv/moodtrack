@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #f8f3ea;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+select, button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #1db954;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.playlist {
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.track {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #f4f4f4;
+}
