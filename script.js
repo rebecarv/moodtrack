@@ -7,7 +7,7 @@ const moodToPlaylists = {
   ],
   sad: [
     {
-      name: "crying myself to sleep",
+      name: "Crying Myself to Sleep",
       url: "https://open.spotify.com/playlist/6yYA6aUGp8qUTgQWWYkPkP?si=d31f304357fe4ec6"
     }
   ],
@@ -30,11 +30,15 @@ function showPlaylist() {
   const playlist = moodToPlaylists[mood][0];
   const container = document.getElementById('playlist');
 
-  container.innerHTML = `
-    <h2>Your Mood Playlist</h2>
-    <div class="track">
-      <strong>${playlist.name}</strong><br />
-      <a href="${playlist.url}" target="_blank">🎧 Listen on Spotify</a>
-    </div>
+  container.classList.remove('hidden'); // 👈 show it
+  container.innerHTML = `<h2>Your Mood Playlist</h2>`;
+
+  const trackDiv = document.createElement('div');
+  trackDiv.className = 'track animated-track';
+  trackDiv.innerHTML = `
+    <strong>${playlist.name}</strong><br/>
+    <a href="${playlist.url}" target="_blank">Open on Spotify</a>
   `;
+  container.appendChild(trackDiv);
 }
+
